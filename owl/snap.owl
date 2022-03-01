@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://data.snapdrgn.net/ontology/snap"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://data.snapdrgn.net/ontology/snap">
+    <Prefix name="" IRI="http://data.snapdrgn.net/ontology/snap#"/>
+    <Prefix name="oa" IRI="http://www.w3.org/ns/oa#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="lawd" IRI="http://lawd.info/ontology/"/>
+    <Prefix name="prov" IRI="http://www.w3.org/TR/prov-o/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="saws" IRI="http://purl.org/saws/ontology#"/>
+    <Prefix name="snap" IRI="http://data.snapdrgn.net/ontology/snap#"/>
+    <Prefix name="cidoc" IRI="http://erlangen-crm.org/current/"/>
+    <Prefix name="efrbroo" IRI="http://erlangen-crm.org/efrbroo/"/>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Import>http://lawd.info/ontology/</Import>
+    <Import>http://www.w3.org/ns/prov#</Import>
+    <Import>http://purl.org/saws/ontology</Import>
+    <Import>http://www.w3.org/ns/oa#</Import>
+    <Declaration>
+        <Class IRI="#AcknowledgedFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdoptedFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllianceWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AncestorOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuntOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrotherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CasualIntimateRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildOfSiblingOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClaimedFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CousinOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DaughterOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DescendentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmnityFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendedFamilyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendedHouseholdOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FatherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FosterFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreedSlaveOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreedmanOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreedwomanOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriendshipFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandchildOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GranddaughterOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandfatherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandmotherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandparentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrandsonOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreatGrandfatherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreatGrandmotherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreatGrandparentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HalfFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HereditaryFamilyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HouseSlaveOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HouseholdOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InLawFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntimateRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KinOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegallyRecognisedRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaternalFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NephewOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NieceOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaternalFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProfessionalRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QualifierRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeriousIntimateRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiblingOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiblingOfParentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SisterOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlaveOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SonOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StepFamilyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UncleOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oa:Annotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bond-with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#certainty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disambiguatingFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has-bond"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has-link"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#link-with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occupation"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#QuAC"/>
+        <Class abbreviatedIRI="lawd:Agent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QuAC"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QuAC"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="efrbroo:F10_Person"/>
+        <Class abbreviatedIRI="lawd:Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AcknowledgedFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdoptedFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllianceWith"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncestorOf"/>
+        <Class IRI="#ExtendedFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuntOf"/>
+        <Class IRI="#SiblingOfParentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bond"/>
+        <Class IRI="#Link"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrotherOf"/>
+        <Class IRI="#SiblingOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CasualIntimateRelationshipWith"/>
+        <Class IRI="#IntimateRelationshipWith"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildOf"/>
+        <Class IRI="#HereditaryFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildOfSiblingOf"/>
+        <Class IRI="#ExtendedFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClaimedFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CousinOf"/>
+        <Class IRI="#ExtendedFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DaughterOf"/>
+        <Class IRI="#ChildOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DescendentOf"/>
+        <Class IRI="#ExtendedFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmnityFor"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendedFamilyOf"/>
+        <Class IRI="#FamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendedHouseholdOf"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyOf"/>
+        <Class IRI="#KinOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FatherOf"/>
+        <Class IRI="#ParentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FosterFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreedSlaveOf"/>
+        <Class IRI="#ExtendedHouseholdOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreedmanOf"/>
+        <Class IRI="#FreedSlaveOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreedwomanOf"/>
+        <Class IRI="#FreedSlaveOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FriendshipFor"/>
+        <Class IRI="#AllianceWith"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandchildOf"/>
+        <Class IRI="#DescendentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GranddaughterOf"/>
+        <Class IRI="#GrandchildOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandfatherOf"/>
+        <Class IRI="#GrandparentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandmotherOf"/>
+        <Class IRI="#GrandparentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandparentOf"/>
+        <Class IRI="#AncestorOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrandsonOf"/>
+        <Class IRI="#GrandchildOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreatGrandfatherOf"/>
+        <Class IRI="#GreatGrandparentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreatGrandmotherOf"/>
+        <Class IRI="#GreatGrandparentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreatGrandparentOf"/>
+        <Class IRI="#AncestorOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HalfFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HereditaryFamilyOf"/>
+        <Class IRI="#FamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HouseSlaveOf"/>
+        <Class IRI="#HouseholdOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HouseSlaveOf"/>
+        <Class IRI="#SlaveOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HouseholdOf"/>
+        <Class IRI="#ExtendedHouseholdOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InLawFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntimateRelationshipWith"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KinOf"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegallyRecognisedRelationshipWith"/>
+        <Class IRI="#SeriousIntimateRelationshipWith"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaternalFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotherOf"/>
+        <Class IRI="#ParentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NephewOf"/>
+        <Class IRI="#ChildOfSiblingOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NieceOf"/>
+        <Class IRI="#ChildOfSiblingOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParentOf"/>
+        <Class IRI="#HereditaryFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaternalFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProfessionalRelationship"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuAC"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QualifierRelationship"/>
+        <Class IRI="#Bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeriousIntimateRelationshipWith"/>
+        <Class IRI="#FamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeriousIntimateRelationshipWith"/>
+        <Class IRI="#IntimateRelationshipWith"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiblingOf"/>
+        <Class IRI="#HereditaryFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiblingOfParentOf"/>
+        <Class IRI="#ExtendedFamilyOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SisterOf"/>
+        <Class IRI="#SiblingOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlaveOf"/>
+        <Class IRI="#ExtendedHouseholdOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SonOf"/>
+        <Class IRI="#ChildOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StepFamilyRelationship"/>
+        <Class IRI="#QualifierRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UncleOf"/>
+        <Class IRI="#SiblingOfParentOf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E54_Dimension"/>
+        <Class abbreviatedIRI="cidoc:E77_Persistent_Item"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BrotherOf"/>
+        <Class IRI="#SisterOf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChildOf"/>
+        <Class IRI="#ParentOf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DaughterOf"/>
+        <Class IRI="#SonOf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FatherOf"/>
+        <Class IRI="#MotherOf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GrandfatherOf"/>
+        <Class IRI="#GrandmotherOf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GreatGrandfatherOf"/>
+        <Class IRI="#GreatGrandmotherOf"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#associatedDate"/>
+        <ObjectProperty IRI="#disambiguatingFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#associatedPlace"/>
+        <ObjectProperty IRI="#disambiguatingFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bond-with"/>
+        <ObjectProperty IRI="#link-with"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#certainty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has-bond"/>
+        <ObjectProperty IRI="#has-link"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#occupation"/>
+        <ObjectProperty IRI="#disambiguatingFeature"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedDate"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedPlace"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bond-with"/>
+        <Class IRI="#Bond"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has-bond"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has-link"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#link-with"/>
+        <Class IRI="#Link"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occupation"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bond-with"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has-bond"/>
+        <Class IRI="#Bond"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has-link"/>
+        <Class IRI="#Link"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#link-with"/>
+        <Class IRI="#QuAC"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#associatedDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#associatedPlace"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
